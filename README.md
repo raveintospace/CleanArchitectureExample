@@ -1,2 +1,2 @@
 # CleanArchitectureExample
-Small project to practice Clean Architecture with SwiftUI
+Small project to practice Clean Architecture with SwiftUI, following a Medium article by Nicolas Guyot
