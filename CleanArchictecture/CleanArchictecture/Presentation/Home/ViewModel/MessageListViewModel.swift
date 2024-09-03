@@ -8,11 +8,12 @@
 import Foundation
 
 // Data for view
-final class MessageListViewModel: ObservableObject {
+@Observable
+final class MessageListViewModel {
     
     var getMessagesUseCase = GetMessagesUseCase(repository: MessageRepositoryImpl(dataSource: MessageDataSourceImpl()))
     
-    @Published var messages: [Message] = []
+    var messages: [Message] = []
     
     func getMessages() {
         let result = getMessagesUseCase.execute()

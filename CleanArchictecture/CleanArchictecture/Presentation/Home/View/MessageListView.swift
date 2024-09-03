@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MessageListView: View {
     
-    @StateObject private var viewModel = MessageListViewModel()
+    @State private var viewModel = MessageListViewModel()
     
     var body: some View {
         VStack {
